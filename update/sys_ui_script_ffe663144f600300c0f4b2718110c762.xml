@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Client-side logic for Angular App.</description>
+        <global>false</global>
+        <name>x_144865_angular_t.eangular_app_client_l</name>
+        <script><![CDATA[angular.module('angularapp',[]);
+angular.module('angularapp').controller('AngularAppCtrl',function($scope){
+	$scope.myVar = '';
+	$scope.i = 0;
+	
+	$scope.clearText = function(){
+		$scope.myVar = '';
+		$scope.i++;
+		alert("myVar cleared "+$scope.i+" times by "+g_user.userName+".");
+	};
+	
+});]]></script>
+        <script_name>eangular_app_client_logic</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-09 10:34:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ffe663144f600300c0f4b2718110c762</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_144865_angular_t.eangular_app_client_l</sys_name>
+        <sys_package display_value="angular test" source="x_144865_angular_t">473643504f200300c0f4b2718110c7c2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="angular test">473643504f200300c0f4b2718110c7c2</sys_scope>
+        <sys_update_name>sys_ui_script_ffe663144f600300c0f4b2718110c762</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-09 10:49:09</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
